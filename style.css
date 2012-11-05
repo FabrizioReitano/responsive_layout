@@ -1,0 +1,142 @@
+#top {
+    background: url("images/acqua.jpg") no-repeat scroll center top transparent;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#wrapper {
+	margin: 20px auto;
+	width: 94%;
+	padding: 5px;
+}
+
+#content {
+	float: left;
+	width: 60%;
+	padding-left: 225px;
+	padding-top: 100px;
+}
+
+#sidebar {
+	float: right;
+	width: 265px;
+	padding-top: 100px;
+}
+
+footer {
+	text-align: center;
+	color: #5F5F5F;
+	font-size: 0.8em;
+	clear: both;	
+}
+
+#header {
+	padding-top: 80px;
+    position: fixed;
+    text-align: right;
+    width: 180px;
+    z-index: 20;
+}
+
+#search-form {
+	z-index: 1000;
+}
+
+#search-form input {
+    border: 1px solid #BEBDAA;
+    border-radius: 13px 13px 13px 13px;
+    color: #86856F;
+    font: italic 105%/110% "Times New Roman",Times,serif;
+    padding: 3px 4px 3px 28px;
+    transition: all 0.7s ease 0s;
+    width: 100px;
+    text-align: left;
+}
+
+
+/*dim 1680 - 1024 - 768 - 320*/
+
+
+
+@media screen and (max-width: 768px) {
+	
+	#header {
+		width: auto;
+		position: relative;
+		text-align: left;
+		padding-top: 35px;
+	}
+	
+	#main-nav ul {
+		padding: 0;
+	}
+	
+	#main-nav li {
+		display: inline;
+		text-transform: uppercase;
+		padding-right: 10px;
+	}
+	
+	#search-form {
+		position: absolute;
+		right: 0px;
+		top: 45px;
+		bottom: 17px;
+		width: 125px;
+		z-index: 1000;
+	}
+	
+	#search-form input {
+		width: 55px;
+		border: 1px solid #BEBDAA;
+		border-radius: 13px 13px 13px 13px;
+		color: #86856F;
+		font: italic 105%/110% "Times New Roman",Times,serif;
+		padding: 3px 4px 3px 28px;
+		transition: all 0.7s ease 0s;
+	}
+	
+	#wrapper {
+		margin: 20px auto;
+		width: 94%;
+		padding: 5px;
+	}
+	
+	#sidebar {
+		display: none;
+	}
+	
+	#content {
+		float: none;
+		width: 100%;
+		background: none repeat scroll 0 0 #F8F8F8;
+		padding-left: 0;
+		padding-top: 5px;
+	}
+	
+	#content article {
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 320px) {
+
+	#header {
+		text-align: left;
+	}
+
+	#search-form {
+		position: absolute;
+		right: 5%;
+		top: 45px;
+		bottom: 17px;
+		z-index: 1000;
+		width: auto;
+	}
+
+	#site-logo {
+		width: 60%;
+		word-wrap: break-word;
+	}
+}
